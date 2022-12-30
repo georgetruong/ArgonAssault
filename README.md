@@ -1,2 +1,2 @@
-# argon-assault
-On rails 3D flight shooter created in Unity
+# Argon Assault
+On rails 3D fighter plane shooter built with Unity
