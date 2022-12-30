@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4539649307933395172}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -25}
+  m_LocalPosition: {x: 0, y: 1, z: -25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -212,6 +212,87 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7591228524992408244, guid: bf3e238be7d42b245badff302a78aaa0, type: 3}
   m_PrefabInstance: {fileID: 1499076085949786055}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9051183378717337593 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7588999207286734910, guid: bf3e238be7d42b245badff302a78aaa0, type: 3}
+  m_PrefabInstance: {fileID: 1499076085949786055}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1026711010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9051183378717337593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79a7a63de5c6fff4cb288175bd994319, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movement:
+    m_Name: Movement
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: c30d566d-297e-45b1-ae00-7a229ad21466
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 2D Vector
+      m_Id: a01d5a2d-6c2c-45d0-928a-5ca5df9dc385
+      m_Path: 2DVector
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 4
+    - m_Name: up
+      m_Id: 2b9a0ffa-d619-4314-a870-301051642824
+      m_Path: <Keyboard>/w
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    - m_Name: down
+      m_Id: adf64dc3-337c-45ec-8042-13417187c0e3
+      m_Path: <Keyboard>/s
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    - m_Name: left
+      m_Id: 2ffa94f8-0b86-45f0-9cdb-0d5123f74f02
+      m_Path: <Keyboard>/a
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    - m_Name: right
+      m_Id: c7bcc427-6778-4caa-a0d0-81e97b441493
+      m_Path: <Keyboard>/d
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    - m_Name: 
+      m_Id: a7d7a60e-db97-4807-89a4-6d1e4878c090
+      m_Path: <Gamepad>/leftStick
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 0
+    m_Flags: 0
+  controlSpeed: 50
+  xRange: 20
+  yRange: 10
+  positionPitchFactor: -1
+  controlPitchFactor: -20
+  positionYawFactor: -0.25
+  controlRollFactor: -20
 --- !u!1001 &4539649306762083980
 PrefabInstance:
   m_ObjectHideFlags: 0
