@@ -358,6 +358,70 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1026711010, guid: fbbfe11887e39f64aa152784717aa354, type: 3}
+      propertyPath: fire.m_Id
+      value: de10702b-b9fa-448d-a195-c80fdfee9478
+      objectReference: {fileID: 0}
+    - target: {fileID: 1026711010, guid: fbbfe11887e39f64aa152784717aa354, type: 3}
+      propertyPath: fire.m_Name
+      value: Fire
+      objectReference: {fileID: 0}
+    - target: {fileID: 1026711010, guid: fbbfe11887e39f64aa152784717aa354, type: 3}
+      propertyPath: fire.m_SingletonActionBindings.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1026711010, guid: fbbfe11887e39f64aa152784717aa354, type: 3}
+      propertyPath: movement.m_SingletonActionBindings.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1026711010, guid: fbbfe11887e39f64aa152784717aa354, type: 3}
+      propertyPath: fire.m_SingletonActionBindings.Array.data[0].m_Id
+      value: 9b660eb8-fdc4-491d-940d-8779921eb792
+      objectReference: {fileID: 0}
+    - target: {fileID: 1026711010, guid: fbbfe11887e39f64aa152784717aa354, type: 3}
+      propertyPath: fire.m_SingletonActionBindings.Array.data[1].m_Id
+      value: f8e21d61-0f47-448e-a88e-4facba6372c0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1026711010, guid: fbbfe11887e39f64aa152784717aa354, type: 3}
+      propertyPath: fire.m_SingletonActionBindings.Array.data[0].m_Path
+      value: <Mouse>/leftButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 1026711010, guid: fbbfe11887e39f64aa152784717aa354, type: 3}
+      propertyPath: fire.m_SingletonActionBindings.Array.data[1].m_Path
+      value: <Gamepad>/buttonWest
+      objectReference: {fileID: 0}
+    - target: {fileID: 1026711010, guid: fbbfe11887e39f64aa152784717aa354, type: 3}
+      propertyPath: fire.m_SingletonActionBindings.Array.data[0].m_Action
+      value: Fire
+      objectReference: {fileID: 0}
+    - target: {fileID: 1026711010, guid: fbbfe11887e39f64aa152784717aa354, type: 3}
+      propertyPath: fire.m_SingletonActionBindings.Array.data[1].m_Action
+      value: Fire
+      objectReference: {fileID: 0}
+    - target: {fileID: 1026711010, guid: fbbfe11887e39f64aa152784717aa354, type: 3}
+      propertyPath: movement.m_SingletonActionBindings.Array.data[6].m_Id
+      value: 26504756-6b8d-42a6-b76f-795a4971e10c
+      objectReference: {fileID: 0}
+    - target: {fileID: 1026711010, guid: fbbfe11887e39f64aa152784717aa354, type: 3}
+      propertyPath: movement.m_SingletonActionBindings.Array.data[7].m_Id
+      value: edded9fd-d080-4814-b947-54c971f48c46
+      objectReference: {fileID: 0}
+    - target: {fileID: 1026711010, guid: fbbfe11887e39f64aa152784717aa354, type: 3}
+      propertyPath: movement.m_SingletonActionBindings.Array.data[6].m_Path
+      value: <Mouse>/leftButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 1026711010, guid: fbbfe11887e39f64aa152784717aa354, type: 3}
+      propertyPath: movement.m_SingletonActionBindings.Array.data[7].m_Path
+      value: <Gamepad>/buttonWest
+      objectReference: {fileID: 0}
+    - target: {fileID: 1026711010, guid: fbbfe11887e39f64aa152784717aa354, type: 3}
+      propertyPath: movement.m_SingletonActionBindings.Array.data[6].m_Action
+      value: Movement
+      objectReference: {fileID: 0}
+    - target: {fileID: 1026711010, guid: fbbfe11887e39f64aa152784717aa354, type: 3}
+      propertyPath: movement.m_SingletonActionBindings.Array.data[7].m_Action
+      value: Movement
+      objectReference: {fileID: 0}
     - target: {fileID: 1825693756043525973, guid: fbbfe11887e39f64aa152784717aa354, type: 3}
       propertyPath: m_RootOrder
       value: 2
