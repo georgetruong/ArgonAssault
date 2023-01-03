@@ -6,21 +6,37 @@ using UnityEngine.InputSystem;
 
 public class PlayerControls : MonoBehaviour
 {
-    // Use new Input System
-    [SerializeField] InputAction movement;
-    [SerializeField] InputAction fire;
-    
+    [Header("General Setup Settings")]
+    [Tooltip("How fast ship moves up and down based upon player input")]
     [SerializeField] float controlSpeed = 50f;
+    [Tooltip("Horizontal movement limit of player")]
     [SerializeField] float xRange = 20f;
+    [Tooltip("Vertical movement limit of player")]
     [SerializeField] float yRange = 10f;
 
+    [Header("Screen position based tuning")]
+    [Tooltip("Amount vertical position changes pitch")]
+    [SerializeField] float positionPitchFactor = -1f;
+    [Tooltip("Amount horizontal positon changes yaw")]
+    [SerializeField] float positionYawFactor = -.25f;
+
+    [Header("Player input based tuning")]
+    [Tooltip("Amount player movement changes roll")]
+    [SerializeField] float controlRollFactor = -20f;
+    [Tooltip("Amount player movement changes pitch")]
+    [SerializeField] float controlPitchFactor = -20f;
+
+    [Header("Laser gun array")]
+    [Tooltip("Add all lasers here")]
     [SerializeField] GameObject[] lasers;
 
-    [SerializeField] float positionPitchFactor = -1f;
-    [SerializeField] float controlPitchFactor = -20f;
-    [SerializeField] float positionYawFactor = -.25f;
-    [SerializeField] float controlRollFactor = -20f;
-    
+    // Use new Input System
+    [Header("Player Input System Settings")]
+    [Tooltip("Controls to move player horizontally and vertically")]
+    [SerializeField] InputAction movement;
+    [Tooltip("Controls to fire lasers")]
+    [SerializeField] InputAction fire;
+
     float xThrow, yThrow;
 
     // Start is called before the first frame update
