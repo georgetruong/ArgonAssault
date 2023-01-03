@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,6 +13,8 @@ public class PlayerControls : MonoBehaviour
     [SerializeField] float controlSpeed = 50f;
     [SerializeField] float xRange = 20f;
     [SerializeField] float yRange = 10f;
+
+    [SerializeField] GameObject[] lasers;
 
     [SerializeField] float positionPitchFactor = -1f;
     [SerializeField] float controlPitchFactor = -20f;
@@ -85,9 +88,17 @@ public class PlayerControls : MonoBehaviour
 
         // New Input System
         if (fire.ReadValue<float>() > 0.1) {
-            Debug.Log("Firing");
+            SetLasersActive(true);
         } else {
-            Debug.Log("Not firing");
+            SetLasersActive(false);
         }
     }
+
+    void SetLasersActive(bool isActive) {
+        foreach(GameObject laser in lasers) {
+            var emissionModule = laser.GetComponent<ParticleSystem>().emission;
+            emissionModule.enabled = isActive;
+        }
+    }
+
 }
