@@ -7,6 +7,8 @@ public class PlayerControls : MonoBehaviour
 {
     // Use new Input System
     [SerializeField] InputAction movement;
+    [SerializeField] InputAction fire;
+    
     [SerializeField] float controlSpeed = 50f;
     [SerializeField] float xRange = 20f;
     [SerializeField] float yRange = 10f;
@@ -25,22 +27,25 @@ public class PlayerControls : MonoBehaviour
 
     void OnEnable() {
         movement.Enable();
+        fire.Enable();
     }
 
     void OnDisable() {
         movement.Disable();    
+        fire.Disable();
     }
 
     // Update is called once per frame
     void Update() {
         ProcessTranslation();
         ProcessRotation();
+        ProcessFiring();
     }
 
     void ProcessTranslation() {
         // Old Input Manager
-        // float horizontalThrow = Input.GetAxis("Horizontal");
-        // float verticalThrow = Input.GetAxis("Vertical");
+        // xThrow = Input.GetAxis("Horizontal");
+        // yThrow = Input.GetAxis("Vertical");
 
         // New Input System
         xThrow = movement.ReadValue<Vector2>().x;
@@ -67,5 +72,22 @@ public class PlayerControls : MonoBehaviour
         float roll = xThrow * controlRollFactor;
 
         transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
+    }
+
+    void ProcessFiring() {
+        /** Old Input Manager
+        if (Input.GetButton("Fire1")) {
+            Debug.Log("Firing");
+        } else {
+            Debug.Log("Not Firing");
+        }
+        **/
+
+        // New Input System
+        if (fire.ReadValue<float>() > 0.1) {
+            Debug.Log("Firing");
+        } else {
+            Debug.Log("Not firing");
+        }
     }
 }
