@@ -62,6 +62,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1741139820255028, guid: 7861019a7b8cb6f4db5310695263b29a, type: 3}
   m_PrefabInstance: {fileID: 1281036117459961333}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &6663052711590789163
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279312571447907009}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.228248, y: 4.2670856, z: 11.603619}
+  m_Center: {x: -3.469447e-16, y: -0.000002980232, z: -3.469447e-16}
 --- !u!114 &1499076085095316005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74,6 +87,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79a7a63de5c6fff4cb288175bd994319, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controlSpeed: 50
+  xRange: 20
+  yRange: 10
+  positionPitchFactor: -1
+  positionYawFactor: -0.25
+  controlRollFactor: -20
+  controlPitchFactor: -20
+  lasers:
+  - {fileID: 5697970556132742179}
+  - {fileID: 5697970556847282418}
   movement:
     m_Name: Movement
     m_Type: 0
@@ -156,13 +179,22 @@ MonoBehaviour:
       m_Action: Fire
       m_Flags: 0
     m_Flags: 0
-  controlSpeed: 50
-  xRange: 20
-  yRange: 10
-  positionPitchFactor: -1
-  controlPitchFactor: -20
-  positionYawFactor: -0.25
-  controlRollFactor: -20
+--- !u!54 &1001157160045804274
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279312571447907009}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!4 &1281824455226046539 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4172660377238974, guid: 7861019a7b8cb6f4db5310695263b29a, type: 3}
@@ -177,7 +209,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 917736061211494788, guid: fb22eb9177a352546996301f31428623, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 917736061211494788, guid: fb22eb9177a352546996301f31428623, type: 3}
       propertyPath: m_LocalScale.x
@@ -241,6 +273,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb22eb9177a352546996301f31428623, type: 3}
+--- !u!1 &5697970556132742179 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2039598074582425495, guid: fb22eb9177a352546996301f31428623, type: 3}
+  m_PrefabInstance: {fileID: 6007056075849927604}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6007056076565514085
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -250,7 +287,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 917736061211494788, guid: fb22eb9177a352546996301f31428623, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 917736061211494788, guid: fb22eb9177a352546996301f31428623, type: 3}
       propertyPath: m_LocalScale.x
@@ -314,3 +351,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb22eb9177a352546996301f31428623, type: 3}
+--- !u!1 &5697970556847282418 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2039598074582425495, guid: fb22eb9177a352546996301f31428623, type: 3}
+  m_PrefabInstance: {fileID: 6007056076565514085}
+  m_PrefabAsset: {fileID: 0}
