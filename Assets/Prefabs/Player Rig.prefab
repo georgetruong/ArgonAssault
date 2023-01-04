@@ -138,72 +138,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!1001 &3547651188721409087
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 9049068513153371507}
-    m_Modifications:
-    - target: {fileID: 3950762651293796998, guid: 589a8b961af35164ba48f8395032f482, type: 3}
-      propertyPath: m_Name
-      value: Explosion VFX
-      objectReference: {fileID: 0}
-    - target: {fileID: 3950762651293797000, guid: 589a8b961af35164ba48f8395032f482, type: 3}
-      propertyPath: playOnAwake
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3950762651293797001, guid: 589a8b961af35164ba48f8395032f482, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3950762651293797001, guid: 589a8b961af35164ba48f8395032f482, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3950762651293797001, guid: 589a8b961af35164ba48f8395032f482, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3950762651293797001, guid: 589a8b961af35164ba48f8395032f482, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3950762651293797001, guid: 589a8b961af35164ba48f8395032f482, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3950762651293797001, guid: 589a8b961af35164ba48f8395032f482, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3950762651293797001, guid: 589a8b961af35164ba48f8395032f482, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3950762651293797001, guid: 589a8b961af35164ba48f8395032f482, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3950762651293797001, guid: 589a8b961af35164ba48f8395032f482, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3950762651293797001, guid: 589a8b961af35164ba48f8395032f482, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3950762651293797001, guid: 589a8b961af35164ba48f8395032f482, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 589a8b961af35164ba48f8395032f482, type: 3}
---- !u!198 &569745239091451575 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 3950762651293797000, guid: 589a8b961af35164ba48f8395032f482, type: 3}
-  m_PrefabInstance: {fileID: 3547651188721409087}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7808480146981516600
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -211,6 +145,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1825693756043525973}
     m_Modifications:
+    - target: {fileID: 46866305466858079, guid: 3b2739356023ab94899172fc9e5f8f31, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 46866305466858079, guid: 3b2739356023ab94899172fc9e5f8f31, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 46866305466858079, guid: 3b2739356023ab94899172fc9e5f8f31, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 46866305466858079, guid: 3b2739356023ab94899172fc9e5f8f31, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 46866305466858079, guid: 3b2739356023ab94899172fc9e5f8f31, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 46866305466858079, guid: 3b2739356023ab94899172fc9e5f8f31, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 679700228680422869, guid: 3b2739356023ab94899172fc9e5f8f31, type: 3}
+      propertyPath: crashVFX
+      value: 
+      objectReference: {fileID: 7853094652097630054}
     - target: {fileID: 1279312571447907009, guid: 3b2739356023ab94899172fc9e5f8f31, type: 3}
       propertyPath: m_Name
       value: Player Ship
@@ -259,33 +221,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6663052711590789163, guid: 3b2739356023ab94899172fc9e5f8f31, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b2739356023ab94899172fc9e5f8f31, type: 3}
+--- !u!198 &7853094652097630054 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 46866305466858078, guid: 3b2739356023ab94899172fc9e5f8f31, type: 3}
+  m_PrefabInstance: {fileID: 7808480146981516600}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &9049068513153371507 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1281824455226046539, guid: 3b2739356023ab94899172fc9e5f8f31, type: 3}
   m_PrefabInstance: {fileID: 7808480146981516600}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &9051183378717337593 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1279312571447907009, guid: 3b2739356023ab94899172fc9e5f8f31, type: 3}
-  m_PrefabInstance: {fileID: 7808480146981516600}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &679700228680422869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9051183378717337593}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c36c175626fc3bc4fb85b956094f8e1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  loadDelay: 1
-  crashVFX: {fileID: 569745239091451575}
