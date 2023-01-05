@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] Transform parent;
     [SerializeField] GameObject deathVFX;
     [SerializeField] GameObject hitVFX;
 
@@ -13,11 +12,22 @@ public class Enemy : MonoBehaviour
     [SerializeField] int damagePerHit = 1;
 
     Scoreboard scoreBoard;
+    GameObject parentGameObject;
 
-    void Start() {
+    void Start()
+    {
         // FindObjectOfType can be resource heavy. Okay in Start(), 
         // but shouldn't use in Update() when it runs each frame.
-        scoreBoard = FindObjectOfType<Scoreboard>();    
+        scoreBoard = FindObjectOfType<Scoreboard>();
+        parentGameObject = GameObject.FindWithTag("SpawnAtRuntime");
+
+        AddRigidbody();
+    }
+
+    private void AddRigidbody()
+    {
+        Rigidbody rb = gameObject.AddComponent<Rigidbody>();
+        rb.useGravity = false;
     }
 
     void OnParticleCollision(GameObject other) {
@@ -29,13 +39,13 @@ public class Enemy : MonoBehaviour
 
     void KillEnemy() {
         GameObject vfx = Instantiate(deathVFX, transform.position, Quaternion.identity);
-        vfx.transform.parent = parent;
+        vfx.transform.parent = parentGameObject.transform;
         Destroy(this.gameObject);
     }
 
     void ProcessHit() {
         GameObject vfx = Instantiate(hitVFX, transform.position, Quaternion.identity);
-        vfx.transform.parent = parent;
+        vfx.transform.parent = parentGameObject.transform;
         scoreBoard.IncreaseScore(scorePerHit);
         hitPoints -= damagePerHit;
     }
