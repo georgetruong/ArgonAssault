@@ -307,9 +307,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82703cc2fd24ffa43a7d391522f68cc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathVFX: {fileID: 3950762651293796998, guid: 589a8b961af35164ba48f8395032f482, type: 3}
   parent: {fileID: 983143635}
+  deathVFX: {fileID: 3950762651293796998, guid: 589a8b961af35164ba48f8395032f482, type: 3}
+  hitVFX: {fileID: 3950762651293796998, guid: 2f5696dece7795346a44b42791efac8e, type: 3}
+  hitPoints: 100
   scorePerHit: 100
+  damagePerHit: 20
 --- !u!1 &665832313
 GameObject:
   m_ObjectHideFlags: 0
@@ -430,9 +433,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82703cc2fd24ffa43a7d391522f68cc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathVFX: {fileID: 3950762651293796998, guid: 589a8b961af35164ba48f8395032f482, type: 3}
   parent: {fileID: 983143635}
+  deathVFX: {fileID: 3950762651293796998, guid: 589a8b961af35164ba48f8395032f482, type: 3}
+  hitVFX: {fileID: 3950762651293796998, guid: 2f5696dece7795346a44b42791efac8e, type: 3}
+  hitPoints: 100
   scorePerHit: 100
+  damagePerHit: 20
 --- !u!136 &1117773219
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -646,9 +652,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82703cc2fd24ffa43a7d391522f68cc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathVFX: {fileID: 3950762651293796998, guid: 589a8b961af35164ba48f8395032f482, type: 3}
   parent: {fileID: 983143635}
+  deathVFX: {fileID: 3950762651293796998, guid: 589a8b961af35164ba48f8395032f482, type: 3}
+  hitVFX: {fileID: 3950762651293796998, guid: 2f5696dece7795346a44b42791efac8e, type: 3}
+  hitPoints: 100
   scorePerHit: 100
+  damagePerHit: 20
 --- !u!136 &1596340309
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -838,9 +847,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82703cc2fd24ffa43a7d391522f68cc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathVFX: {fileID: 3950762651293796998, guid: 589a8b961af35164ba48f8395032f482, type: 3}
   parent: {fileID: 983143635}
+  deathVFX: {fileID: 3950762651293796998, guid: 589a8b961af35164ba48f8395032f482, type: 3}
+  hitVFX: {fileID: 3950762651293796998, guid: 2f5696dece7795346a44b42791efac8e, type: 3}
+  hitPoints: 100
   scorePerHit: 100
+  damagePerHit: 20
 --- !u!136 &1984593634
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -927,22 +939,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5779243731669365642, guid: f06154d3ceffddc4bb14c86426848b5e, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5779243731669365642, guid: f06154d3ceffddc4bb14c86426848b5e, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5779243731669365642, guid: f06154d3ceffddc4bb14c86426848b5e, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 372.70312
-      objectReference: {fileID: 0}
-    - target: {fileID: 5779243731669365642, guid: f06154d3ceffddc4bb14c86426848b5e, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -1710
-      objectReference: {fileID: 0}
     - target: {fileID: 6291751678015772848, guid: f06154d3ceffddc4bb14c86426848b5e, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1026,22 +1022,6 @@ PrefabInstance:
     - target: {fileID: 6291751678015772848, guid: f06154d3ceffddc4bb14c86426848b5e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6892777892634917605, guid: f06154d3ceffddc4bb14c86426848b5e, type: 3}
-      propertyPath: m_margin.x
-      value: 1512.9685
-      objectReference: {fileID: 0}
-    - target: {fileID: 6892777892634917605, guid: f06154d3ceffddc4bb14c86426848b5e, type: 3}
-      propertyPath: m_margin.z
-      value: -1495.0636
-      objectReference: {fileID: 0}
-    - target: {fileID: 6892777892634917605, guid: f06154d3ceffddc4bb14c86426848b5e, type: 3}
-      propertyPath: m_VerticalAlignment
-      value: 512
-      objectReference: {fileID: 0}
-    - target: {fileID: 6892777892634917605, guid: f06154d3ceffddc4bb14c86426848b5e, type: 3}
-      propertyPath: m_HorizontalAlignment
-      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8447731845791097387, guid: f06154d3ceffddc4bb14c86426848b5e, type: 3}
       propertyPath: m_Name
