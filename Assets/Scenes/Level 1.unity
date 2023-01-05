@@ -123,6 +123,50 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &10611159
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 10611161}
+  - component: {fileID: 10611160}
+  m_Layer: 0
+  m_Name: Scoreboard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &10611160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10611159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cb4b314f9afee149aa0f508729cd5cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &10611161
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10611159}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 62.997322, y: 44.603867, z: 44.334667}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &142015500
 GameObject:
   m_ObjectHideFlags: 0
@@ -309,6 +353,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 3950762651293796998, guid: 589a8b961af35164ba48f8395032f482, type: 3}
   parent: {fileID: 983143635}
+  scoreBoardPoints: 100
 --- !u!1 &665832313
 GameObject:
   m_ObjectHideFlags: 0
@@ -546,6 +591,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 3950762651293796998, guid: 589a8b961af35164ba48f8395032f482, type: 3}
   parent: {fileID: 983143635}
+  scoreBoardPoints: 100
 --- !u!136 &1117773219
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -761,6 +807,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 3950762651293796998, guid: 589a8b961af35164ba48f8395032f482, type: 3}
   parent: {fileID: 983143635}
+  scoreBoardPoints: 100
 --- !u!136 &1596340309
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -874,6 +921,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 3950762651293796998, guid: 589a8b961af35164ba48f8395032f482, type: 3}
   parent: {fileID: 983143635}
+  scoreBoardPoints: 100
 --- !u!136 &1984593634
 CapsuleCollider:
   m_ObjectHideFlags: 0
