@@ -103,7 +103,7 @@ public class PlayerControls : MonoBehaviour
         **/
 
         // New Input System
-        if (fire.ReadValue<float>() > 0.1) {
+        if (fire.ReadValue<float>() > 0.5) {
             SetLasersActive(true);
         } else {
             SetLasersActive(false);
