@@ -333,6 +333,7 @@ GameObject:
   - component: {fileID: 2169488316178535495}
   - component: {fileID: 2177499329447309667}
   - component: {fileID: 655274176218555676}
+  - component: {fileID: 1651540552}
   m_Layer: 0
   m_Name: Dart
   m_TagString: Untagged
@@ -418,12 +419,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82703cc2fd24ffa43a7d391522f68cc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parent: {fileID: 0}
-  deathVFX: {fileID: 0}
-  hitVFX: {fileID: 0}
+  deathVFX: {fileID: 3950762651293796998, guid: 589a8b961af35164ba48f8395032f482, type: 3}
+  hitVFX: {fileID: 3950762651293796998, guid: 2f5696dece7795346a44b42791efac8e, type: 3}
   hitPoints: 1
   scorePerHit: 20
   damagePerHit: 1
+--- !u!95 &1651540552
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2191436064998082803}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &2370557171967132969
 GameObject:
   m_ObjectHideFlags: 0
